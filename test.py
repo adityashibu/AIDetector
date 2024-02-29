@@ -1,4 +1,4 @@
-from train import train_logistic_regression_model
+from train import train_svm_model
 from preprocess import preprocess_text
 
 # Define the function to test a given input text
@@ -20,7 +20,7 @@ def test_input_text(input_text, trained_model, vectorizer):
 
 if __name__ == "__main__":
     # Train the logistic regression model and get the trained model and vectorizer
-    trained_model, vectorizer = train_logistic_regression_model("preprocessed_data.csv")
+    trained_model, vectorizer = train_svm_model("preprocessed_data.csv")
 
     # Test a sample input text
     sample_input_text = "AI has been in the forefront of technology, It has been helping people with multiple activities, mainly automating and making peoples lives easier."
